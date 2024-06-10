@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab_3.srcs/sources_1/imports/lab3_src" --include "../../../../lab_3.srcs/sources_1/imports/Lab0" \
+"../../../../lab_3.srcs/sources_1/imports/Downloads/comparator.v" \
+"../../../../lab_3.srcs/sim_1/imports/Downloads/comparator_testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

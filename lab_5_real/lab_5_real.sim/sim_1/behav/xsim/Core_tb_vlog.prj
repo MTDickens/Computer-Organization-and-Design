@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../lab_5_real.srcs/sources_1/imports/lab4_src" --include "../../../../lab_5_real.srcs/sources_1/imports/lab5_src" --include "../../../../lab_5_real.srcs/sources_1/imports/Lab0" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/new/ALUCtrl.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/new/Core.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/new/CtrlUnit.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/lab5_src/DMem.v" \
+"../../../../lab_5_real.srcs/sources_1/new/EX_MEM_REG.v" \
+"../../../../lab_5_real.srcs/sources_1/new/ForwardingUnit.v" \
+"../../../../lab_5_real.srcs/sources_1/new/ID_EX_REG.v" \
+"../../../../lab_5_real.srcs/sources_1/new/IF_ID_REG.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/lab5_src/IMem.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/new/ImmedGen.v" \
+"../../../../lab_5_real.srcs/sources_1/new/MEM_WB_REG.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/lab5_src/Mem.v" \
+"../../../../lab_5_real.srcs/sources_1/new/PredictionUnit.v" \
+"../../../../lab_5_real.srcs/sources_1/new/StallController.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/imports/Downloads/alu.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/imports/Downloads/comparator.v" \
+"../../../../lab_5_real.srcs/sources_1/imports/sources_1/imports/Downloads/reg_file.v" \
+"../../../../lab_5_real.srcs/sim_1/imports/new/Core_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
